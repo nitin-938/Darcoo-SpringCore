@@ -16,16 +16,49 @@
     	<property name="name" value="Vikas"/>
    		<property name="gender" value="Male"/>
    		<property name="Address" ref="add"/>
+   		<property name="list">
+   			
+   			<list>
+	   			<value>1231</value>
+	   			<value>131</value>
+	   			<value>231</value>
+	   			<value>1</value>
+	   			<value>12</value>
+	   			 <value>1321</value>
+	   			<value>1231</value>
+	   			<value>231</value>
+   			</list>	
+   		</property>
+   		<property name="setofContacts">
+   			<set>
+   				<value>12</value>
+	   			 <value>1321</value>
+	   			<value>1231</value>
+	   			<value>231</value> 
+	   			 <value>1321</value>
+   			</set>
+   		</property>
+   		<property name="map">
+   			<map>
+   				<entry key="1" value="one"/>
+   				<entry key="2" value="two"/>
+   				<entry key="3" value="three"/>
+   				<entry key="4 " value="four"/>
+   				<entry key="1" value="one"/>
+   			
+   			</map>
+   		</property>
+   		 
     </bean>
     
- 
     
-   <bean name="emp2"  class="com.my.spring.model.Employee">	
+  <!--<bean name="emp2"  class="com.my.spring.model.Employee">	
     	<constructor-arg name="id" value="2311"/>
     	<constructor-arg name="name" value="Amit"/>
    		<constructor-arg name="gender" value="Male"/>
    		<constructor-arg name="address" ref="add"/>
     </bean> 
+     --> 
     
     
 
