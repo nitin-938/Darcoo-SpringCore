@@ -6,16 +6,27 @@
 
     <!-- bean definitions here -->
     
-    <bean name="emp1"  class="com.my.spring.model.Employee">	
+    <bean name="add" class="com.my.spring.model.Address">
+    	<property name="city" value="Noida"/>  
+    	<property name="state" value="up"/>
+    </bean>
+    
+    <bean id="emp1"  class="com.my.spring.model.Employee">	
     	<property name="id" value="10011"/>
     	<property name="name" value="Vikas"/>
    		<property name="gender" value="Male"/>
+   		<property name="Address" ref="add"/>
     </bean>
     
-     <bean name="emp2 "  class="com.my.spring.model.Employee">	
-    	<constructor-arg name="id" value="11011"/>
+ 
+    
+   <bean name="emp2"  class="com.my.spring.model.Employee">	
+    	<constructor-arg name="id" value="2311"/>
     	<constructor-arg name="name" value="Amit"/>
    		<constructor-arg name="gender" value="Male"/>
-    </bean>
+   		<constructor-arg name="address" ref="add"/>
+    </bean> 
+    
+    
 
 </beans>

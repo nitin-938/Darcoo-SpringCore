@@ -1,13 +1,10 @@
-package com.my.spring;
+ package com.my.spring;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import com.my.spring.model.Employee;
 
 public class Main {
-
-	private static final String Guest = null;
 
 	public static void main(String[] args) {
 		
@@ -17,13 +14,13 @@ public class Main {
 // 		Employee bean =  (Employee) ioc.getBean("emp");   Type casting Employee
 		
 		Employee bean =  ioc.getBean("emp1",Employee.class);
-		
 		System.out.println(bean);
+
+		Employee bean2 =  ioc.getBean("emp2",Employee.class);		
+		System.out.println(bean2);
 		
-//		Employee bean2 =  ioc.getBean("emp2",Employee.class);
-//		
-//		System.out.println(bean2);
+		System.out.println("Main.main()");
 		
-	}
+ 	}
 
 }
